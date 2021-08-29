@@ -1,0 +1,277 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+    min-height: 8vh;
+    background-color:#fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content:space-around;
+    width: 100px;
+    
+
+}
+
+.nav-links li{
+    list-style: none;
+
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin:5px;
+    transition: all 0.3s ease ;
+
+}
+
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+
+
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top:8vh;
+        background-color:rgb(126, 30, 30);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        
+    }
+    nav-links li{
+        opacity: 0;
+    }
+    
+    .burger{
+        display:flex
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+
+    from{
+        opacity: 0;
+        transform:translateX(50px);
+    }
+    
+    to{
+        opacity: 1;
+        tansform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(-45deg) translate(-5px,6px);
+    
+}
+
+.nav-links2{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: darkgray;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    list-style: none;
+    justify-content:space-around;
+    
+}
+
+.body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background: #fff;
+    min-height: 100vh;
+    background: linear-gradient(to right bottom, #273c75, #079992);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.jumbotron {
+    background-image: img src="../Mental Health Website/img/placeholder1.jpg"  alt="Mental Health Banner"
+}
+.btn-primary {
+    background-color: #c60063;
+    border:3px solid rgb(27, 174, 241);
+}
+
+.box {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(img/placeholder1.jpg);
+    padding: 75px;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  .Our-Services{
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    
+
+  }
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto 40px;
+    border:2px solid #fff;
+}
+
+figure{
+    max-width: 70%;
+    margin: 0 auto 40px;
+    
+}
+
+figure img{
+    
+    max-width:100%;
+    min-width:100%;
+    align-items: center;
+    border:3px solid rgb(27, 174, 241);
+}
+
+.thumb_img_list{
+    text-align: center ;
+    
+}
+.thumb_img_list ul{
+        list-style:none;
+        margin: 0;
+        padding: 0;
+       
+}
+.thumb_img_list ul li{
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 100px;
+    margin: 0 5px;
+    cursor: pointer;
+    
+
+}
+.thumb_img_list ul li img{
+    display: block;
+    border:1px solid rgb(27, 174, 241);
+}
+
+.container1{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 5px;
+    background-color: darkgray;
+    
+}
+.row{
+    display: flex;
+    flex-flow: wrap;
+    margin: 0-15px;
+
+}
+
+.column{
+    flex: 0 0 100%;
+    padding: 0 15px;
+}
+
+.column.half{
+    flex: 0 0 50%;
+}
+
+input,textarea{
+    font-family: 'Poppins', sans-serif;
+    width:100%;
+    padding: 15px 20px;
+    margin: 0 0 20px;
+    font-family: arial;
+    background-color: #fbfbfb;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 0;
+}
+textarea{
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+    resize: none;
+}
+
+input[type="submit"]{
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    text-align:center;
+    cursor: pointer;
+    background-color: darkblue ;
+    font-size:18px;
+    color: #fff;
+
+}
