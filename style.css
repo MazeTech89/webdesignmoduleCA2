@@ -69,7 +69,19 @@ nav{
 
 @media screen and (max-width:1024px){
     .nav-links{
-        width: 60%;
+        width: 40%;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top:8vh;
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        
     }
 
 
@@ -85,7 +97,7 @@ nav{
         right: 0px;
         height: 92vh;
         top:8vh;
-        background-color:rgb(126, 30, 30);
+        background-color:white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -135,6 +147,7 @@ nav{
 }
 
 .nav-links2{
+    font-family: 'Poppins', sans-serif;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -145,6 +158,7 @@ nav{
     font-size: 14px;
     list-style: none;
     justify-content:space-around;
+    color: white;
     
 }
 
