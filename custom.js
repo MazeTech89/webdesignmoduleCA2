@@ -51,21 +51,21 @@ thumb1.addEventListener("click", function(){
 })
 
 thumb2.addEventListener("click", function(){
-    mainImg.src=thumb1Src
+    mainImg.src=thumb2Src
 })
 
 thumb3.addEventListener("click", function(){
-    mainImg.src=thumb1Src
+    mainImg.src=thumb3Src
 })
 
 thumb4.addEventListener("click", function(){
-    mainImg.src=thumb1Src
+    mainImg.src=thumb4Src
 })
 
 thumb5.addEventListener("click", function(){
-    mainImg.src=thumb1Src
+    mainImg.src=thumb5Src
 })
 
 thumb6.addEventListener("click", function(){
-    mainImg.src=thumb1Src
+    mainImg.src=thumb6Src
 })
